@@ -1,4 +1,43 @@
 @tailwind base;
 @tailwind components;
+
+.form-control {
+  @apply w-full bg-gray-200 border border-blue-300 py-1 px-4 rounded text-gray-800 leading-snug
+}
+
+.form-control:hover {
+  @apply bg-white
+}
+.form-control:focus {
+  @apply outline-none shadow-outline
+}
+
+.btn {
+  @apply bg-gray-500 px-4 py-2 rounded shadow-xl cursor-pointer block mx-auto mt-2
+}
+
+.btn:hover {
+  @apply shadow-none
+}
+
 @tailwind utilities;
 
+@variants hover {
+  .rotate-45 {
+    transform: rotate(45deg);
+  }
+}
+
+@responsive {
+  .rotate-45 {
+    transform: rotate(45deg);
+  }
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
+.zoom-2 {
+  transform: scale(2);
+}

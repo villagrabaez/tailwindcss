@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/css/styles.css"
+    "build": "postcss css/tailwind.css -w -o public/css/styles.css"
   },
   "keywords": [],
   "author": "Bernardino Villagra <bernardinovillagra@hotmail.com> (https://twitter.com/villagrabaez)",

@@ -3,12 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+  <title>Card / Producto</title>
+  <script src="https://kit.fontawesome.com/4e79ed1d59.js" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-  <h1>
-    Hello World!
-  </h1>
+<body class="min-h-screen bg-gray-400">
+  <header class="h-16 bg-secondary text-white flex justify-between px-4 items-center">
+    <div>
+      <img class="h-8 py-1" src="img/logo-w.svg" alt="">
+    </div>
+    <div class="text-2xl">&equiv;</div>
+  </header>
+  <main>
+    <div class="h-56 md:h-100 md:bg-center bg-no-repeat bg-center bg-cover" style="background: url('https://images.unsplash.com/photo-1529175283207-194a414b9ffa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');">
+
+    </div>
+    <section class="mx-2 md:flex container mx-auto">
+      <div class="mt-4 mx-2 md:w-1/2 md:flex md:bg-white rounded-lg">
+        <div>
+          <img class="w-full rounded-lg md:rounded-r-none md:w-48 md:h-full object-cover object-left" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=60" alt="">
+        </div>
+        <div class="relative shadow-md mx-2 md:shadow-none p-2 bg-white md:bg-transparent rounded-lg -mt-2">
+          <h2 class="mt-4 text-2xl tracking-tight font-semibold text-gray-900 uppercase md:text-lg">Hamburguesa con queso</h2>
+          <p class="text-gray-700 leading-snug">Hamburguesa con queso aderezo chipotle.</p>
+          <div class="mt-2 text-sm font-semibold text-gray-700">GS. 15.000</div>
+          <div class="mt-2 text-sm text-yellow-700">&starf; &starf; &starf; &starf; &star; / 36 reseñas</div>
+        </div>
+      </div>
+
+      <div class="mt-4 mx-2 md:w-1/2 md:flex md:bg-white rounded-lg">
+        <div>
+          <img class="w-full rounded-lg md:rounded-r-none md:w-48 md:h-full object-cover object-left" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=60" alt="">
+        </div>
+        <div class="relative shadow-md mx-2 md:shadow-none p-2 bg-white md:bg-transparent rounded-lg -mt-2">
+          <h2 class="mt-4 text-2xl tracking-tight font-semibold text-gray-900 uppercase md:text-lg">Hamburguesa con queso</h2>
+          <p class="text-gray-700 leading-snug">Hamburguesa con queso aderezo chipotle.</p>
+          <div class="mt-2 text-sm font-semibold text-gray-700">GS. 15.000</div>
+          <div class="mt-2 text-sm text-yellow-700">&starf; &starf; &starf; &starf; &star; / 36 reseñas</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 mt-8 md:flex">
+      <form class="md:w-2/4 w-full container mx-auto">
+        <div>
+          <label for="nombre">Nombre</label><br>
+          <input class="form-control form-control:hover form-control:focus placeholder-secondary" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+        </div>
+        <div>
+          <label for="email">Email</label><br>
+          <input class="form-control form-control:hover form-control:focus placeholder-secondary" type="email" name="email" id="email" placeholder="Ingrese su email">
+        </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea class="form-control form-control:hover form-control:focus placeholder-secondary" name="mensaje" id="mensaje cols="30" rows="4"></textarea>
+        </div>
+        <div>
+          <button class="btn btn:hover">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="bg-red-100 w-full bg-secondary text-white mt-4 py-4">
+    <div class="md:flex md:flex-row-reverse justify-around">
+      <div class="ml-8">
+        <div class="hover:text-primary cursor-pointer"><i class="fab fa-facebook-f"></i> /platzifood</div>
+        <div class="hover:text-primary cursor-pointer"><i class="fab fa-twitter"></i> @platzifood</div>
+        <div class="hover:text-primary cursor-pointer"><i class="fab fa-instagram"></i> @platzifood</div>
+      </div>
+      <ul class="ml-8 mt-4 md:list-disc">
+        <li>Soporte</li>
+        <li>Acerca de</li>
+        <li>Registro</li>
+        <li>Aviso de privacidad</li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
