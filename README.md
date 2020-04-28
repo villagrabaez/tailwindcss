@@ -63,3 +63,11 @@ Ejecutamos nuestro script para generar nuestro css publico
 Generamos la configuracion por defecto de tailwind
 
     $ npx tailwindcss init tailwind.config.full.js --full
+
+### Librerias para mejorar el proyecto
+
+[Purge css](https://purgecss.com/ "Purge css") nos ayuda a eliminar cosas que no usamos de nuestro css generado por tailwind
+
+[Nanocss](https://cssnano.co/ "Nanocss") nos ayuda a minificar nuestro archivo css generado por tailwind para hacerlo mas liviano y asi mejorar el performance del proyecto.
+
+[Tailwindcss](https://tailwindcss.com/ "Tailwindcss") sitio web oficial de tailwind para ver la documentacion, por cierto esta muy completa.
